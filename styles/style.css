@@ -15,13 +15,6 @@ form {
     background: linear-gradient(35deg, #90cece, #b68180);;
 }
 
-/* #background-img {
-    background: linear-gradient(35deg, #cef3f1, #f8c9c9);
-}
-form {
-    background: linear-gradient(35deg, #c4fafa, #c5b4f3);;
-} */
-
 label {
     font-size: large;
 }
@@ -48,4 +41,6 @@ header p {
 
 main {
     position: relative;
+    display: flex;
 }
+
