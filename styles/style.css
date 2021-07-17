@@ -35,3 +35,18 @@ label {
         width: auto;
     }
 }
+
+#title {
+    position: relative;
+    top: 1em;
+}
+
+header p {
+    position: relative;
+    top: 1em;
+}
+
+main {
+    position: relative;
+    top: 1em;
+}
