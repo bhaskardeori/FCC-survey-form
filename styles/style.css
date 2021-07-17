@@ -1,0 +1,32 @@
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+body header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#background-img {
+    background: linear-gradient(35deg, #ccebff, #ffcccb);
+}
+form {
+    background: linear-gradient(35deg, #90cece, #b68180);;
+}
+
+/* #background-img {
+    background: linear-gradient(35deg, #cef3f1, #f8c9c9);
+}
+form {
+    background: linear-gradient(35deg, #c4fafa, #c5b4f3);;
+} */
+
+label {
+    font-size: large;
+}
+
+.container {
+    width: 40em;
+}
+

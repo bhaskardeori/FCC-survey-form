@@ -5,24 +5,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fitness Survey Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="background-img">
     <header>
-
+        <div class="container">
+            <h1 id="title"><b>Fitness Gym Survey</b></h1>
+            <p id="description">Thanks for filling out our form!</p>
+        </div>
     </header>
 
     <main>
+        <div class="container ">
+            <form id="survey-form" class="p-5 d-grid gap-2 border needs-validation">
 
+                <!--NAME-->
+                <div class="mb-3 col-8 col-sm-12">
+                    <label for="name" class="form-label" id="name-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                </div>
+
+                <!--EMAIL-->
+                <div class="mb-3 col-8 col-sm-12">
+                    <label for="email" class="form-label" id="email-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Your email" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+
+                <!--AGE-->
+                <div class="mb-3 col-8 col-sm-3">
+                    <label for="number" class="form-label" id="number-label">Age</label>
+                    <input type="number" class="form-control" id="number" placeholder="Your age" min="1" max="100"
+                        required>
+                </div>
+
+                <!--GENDER-->
+                <div class="mb-3">
+                    <label>Your gender: </label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+
+
+                <!--HEALTH STATUS-->
+                <div class="mb-3">
+                    <label>What is your general health like? </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="health_status" id="above_avg"
+                            value="above_avg">
+                        <label class="form-check-label" for="above_avg">
+                            Above Average
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="health_status" id="avg" value="avg">
+                        <label class="form-check-label" for="avg">
+                            Average
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="health_status" id="below_avg"
+                            value="below_avg">
+                        <label class="form-check-label" for="below_avg">
+                            Below Average
+                        </label>
+                    </div>
+                </div>
+
+
+                <!--ACTIVITY STATUS-->
+                <div class="mb-3 col-8 col-sm-12">
+                    <label for="">How many days per week do you use the Fitness Center?</label>
+                    <select class="form-select" aria-label="Default select example" id="dropdown">
+                        <option selected>--Select an option--</option>
+                        <option value="1-2">1-2 days</option>
+                        <option value="3-4">3-4 days</option>
+                        <option value="5-7">5-7 days</option>
+                    </select>
+                </div>
+
+
+                <!--CHOICES-->
+                <label>Why do you go to the gym?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="lifestyle" id="lifestyle">
+                    <label class="form-check-label" for="lifestyle">
+                        Lifestyle
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="rehab" id="rehab">
+                    <label class="form-check-label" for="rehab">
+                        Rehabilitation
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="strength" id="strength">
+                    <label class="form-check-label" for="strength">
+                        Strength
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="wt_loss" id="wt_loss">
+                    <label class="form-check-label" for="wt_loss">
+                        Weight Loss
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="health_impv" id="health_impv">
+                    <label class="form-check-label" for="health_impv">
+                        Health Improvement
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="soc" id="rehab">
+                    <label class="form-check-label" for="rehab">
+                        Rehabilitation
+                    </label>
+                </div><br>
+
+                <!--TIMING-->
+                <label>What time do you normally prefer to attend the gym? </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="timing" id="morning" value="morning">
+                    <label class="form-check-label" for="morning">
+                        Morning
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="timing" id="afternoon" value="afternoon">
+                    <label class="form-check-label" for="afternoon">
+                        Afternoon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="timing" id="night" value="night">
+                    <label class="form-check-label" for="night">
+                        Night
+                    </label>
+                </div><br>
+
+                <!--MARITAL STATUS-->
+                <label>Marital status: </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marital_status" id="single" value="single">
+                    <label class="form-check-label" for="single">
+                        Single
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="marital_status" id="married" value="married">
+                    <label class="form-check-label" for="married">
+                        Married
+                    </label>
+                </div><br>
+
+                <!--SUGGESTIONS-->
+                <label>Additional comments..</label>
+                <div class="form-floating col-8 col-sm-12">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments..</label>
+                </div><br>
+
+                <!--SUBMIT BUTTON-->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary col-8 col-sm-12" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!--TESTING SCRIPT-->
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 
 </html>
