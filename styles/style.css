@@ -30,3 +30,8 @@ label {
     width: 40em;
 }
 
+@media (max-width: 576px) { 
+    .container {
+        width: auto;
+    }
+}
